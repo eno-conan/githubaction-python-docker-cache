@@ -1,0 +1,12 @@
+[tool.ruff]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = ["A", "B", "C", "D", "W", "ANN"]
+ignore = [
+    "D",
+    "ANN",
+    "B008", # do not perform function calls in argument defaults
+    "C901", # too complex
+    "B904", # raise from err
+]
+fixable = ["I001", "D201"]
+target-version = "py312"
